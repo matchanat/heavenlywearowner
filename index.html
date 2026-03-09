@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Owner Dashboard | Heavenly Wear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen p-10">
+    <div class="max-w-6xl mx-auto">
+        <header class="flex justify-between items-center mb-10 border-b border-slate-700 pb-5">
+            <h1 class="text-3xl font-bold">Heavenly Wear Control Center</h1>
+            <div class="text-right">
+                <p class="text-slate-400">Database Status: <span class="text-green-400 font-bold">Connected</span></p>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            <a href="URL_GOOGLE_SHEETS_HISTORY" target="_blank" class="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-blue-500 transition">
+                <h3 class="text-xl font-bold mb-2">History Penjualan</h3>
+                <p class="text-slate-400 text-sm">Lihat data transaksi masuk secara real-time di Spreadsheet.</p>
+            </a>
+            <a href="URL_GOOGLE_SHEETS_RETUR" target="_blank" class="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-red-500 transition">
+                <h3 class="text-xl font-bold mb-2">Manajemen Retur</h3>
+                <p class="text-slate-400 text-sm">Pantau pengembalian barang dari pelanggan.</p>
+            </a>
+            <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                <h3 class="text-xl font-bold mb-2">Total Pendapatan</h3>
+                <p class="text-3xl text-green-400 font-bold">Rp 12.450.000</p>
+            </div>
+        </div>
+
+        <div class="bg-slate-800 rounded-3xl p-8 border border-slate-700 shadow-xl">
+            <h2 class="text-2xl font-bold mb-6">Kelola Stok & Harga Katalog</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="text-slate-400 border-b border-slate-700">
+                            <th class="py-4 px-2">Nama Produk</th>
+                            <th class="py-4 px-2">Harga Jual (Rp)</th>
+                            <th class="py-4 px-2">Stok (Global)</th>
+                            <th class="py-4 px-2">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-700">
+                        <tr>
+                            <td class="py-4 px-2 font-semibold">Hijab Sport</td>
+                            <td class="py-4 px-2"><input type="number" value="40000" class="bg-slate-700 p-2 rounded w-32 border-none"></td>
+                            <td class="py-4 px-2"><input type="number" value="150" class="bg-slate-700 p-2 rounded w-24 border-none"></td>
+                            <td class="py-4 px-2">
+                                <button class="bg-blue-600 px-4 py-2 rounded-lg font-bold hover:bg-blue-500 transition">Update</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-2 font-semibold">Hijab Segi Empat Voal</td>
+                            <td class="py-4 px-2"><input type="number" value="35000" class="bg-slate-700 p-2 rounded w-32 border-none"></td>
+                            <td class="py-4 px-2"><input type="number" value="85" class="bg-slate-700 p-2 rounded w-24 border-none"></td>
+                            <td class="py-4 px-2">
+                                <button class="bg-blue-600 px-4 py-2 rounded-lg font-bold hover:bg-blue-500 transition">Update</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
